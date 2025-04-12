@@ -15,6 +15,7 @@ class Figuras {
              double radioC = sc.nextDouble();
              resultado = radioC * radioC * 3.1416;
              System.out.println("El area de tu circulo es: " + resultado);
+         break;
          case "2":
              System.out.println("Ingresa la base de tu triangulo: ");
              double base = sc.nextDouble();
@@ -22,6 +23,7 @@ class Figuras {
              double altura = sc.nextDouble();
              resultado = base * altura / 2;
              System.out.println("El area de tu triangulo es: " + resultado);
+             break;
          case "3":
              System.out.println("Ingresa el ancho de tu rectangulo: ");
              double ancho = sc.nextDouble();
@@ -29,6 +31,9 @@ class Figuras {
              double largo = sc.nextDouble();
              resultado = largo * ancho;
              System.out.println("El area de tu rectangulo es: " + resultado);
+             break;
+         default: 
+             System.out.print("Ingresaste un numero incorrecto");
              
          }
     }
